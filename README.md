@@ -60,10 +60,11 @@ Smart Money EveryDay SA_1 is a feature-rich personal finance management applicat
 *   `MainViewModel`: The central state manager that handles business logic and bridges the UI with the data layer.
 
 ## 🚀 How to Get Started
-1.  **Clone:** `git clone https://github.com/[your-username]/SmartMoneyEveryDaySA_1.git`
+1.  **Clone:** `git clone https://github.com/neomadima/SmartMoneyEveryDaySA_1`
 2.  **Open:** Open the project in **Android Studio Ladybug (2024.2.1)** or newer.
 3.  **Sync:** Let Gradle sync finish and download necessary dependencies.
 4.  **Run:** Deploy to an emulator or physical device running **Android 8.0 (API 26)** or higher.
+5.  Demo Video: https://drive.google.com/file/d/1qVboBwAmM1TCjXm4IdV33A8uQ27ibgX-/view?usp=sharing 
 
 ---
 *Empowering South Africans to build a smarter financial future, one day at a time.* 🇿🇦❤️
