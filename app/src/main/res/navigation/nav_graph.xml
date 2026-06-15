@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AuthFragment">
+
+    <fragment
+        android:id="@+id/AuthFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.AuthFragment"
+        android:label="Authentication"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_AuthFragment_to_DashboardFragment"
+            app:destination="@id/DashboardFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_DashboardFragment_to_AccountDetailFragment"
+            app:destination="@id/AccountDetailFragment" />
+        <action
+            android:id="@+id/action_DashboardFragment_to_TransactionDetailFragment"
+            app:destination="@id/TransactionDetailFragment" />
+        <action
+            android:id="@+id/action_DashboardFragment_to_PayFragment"
+            app:destination="@id/PayFragment" />
+        <action
+            android:id="@+id/action_DashboardFragment_to_TransferFragment"
+            app:destination="@id/TransferFragment" />
+        <action
+            android:id="@+id/action_DashboardFragment_to_AddGoalFragment"
+            app:destination="@id/AddGoalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AccountsFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.AccountsFragment"
+        android:label="Accounts"
+        tools:layout="@layout/fragment_accounts">
+        <action
+            android:id="@+id/action_AccountsFragment_to_AccountDetailFragment"
+            app:destination="@id/AccountDetailFragment" />
+        <action
+            android:id="@+id/action_AccountsFragment_to_PayFragment"
+            app:destination="@id/PayFragment" />
+        <action
+            android:id="@+id/action_AccountsFragment_to_TransferFragment"
+            app:destination="@id/TransferFragment" />
+        <action
+            android:id="@+id/action_AccountsFragment_to_StatementsFragment"
+            app:destination="@id/StatementsFragment" />
+        <action
+            android:id="@+id/action_AccountsFragment_to_AddAccountFragment"
+            app:destination="@id/AddAccountFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddExpenseFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.AddExpenseFragment"
+        android:label="Add Expense"
+        tools:layout="@layout/fragment_add_expense" />
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_SettingsFragment_to_LimitsFragment"
+            app:destination="@id/LimitsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AccountDetailFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.AccountDetailFragment"
+        android:label="Account Details"
+        tools:layout="@layout/fragment_account_detail">
+        <action
+            android:id="@+id/action_AccountDetailFragment_to_TransactionDetailFragment"
+            app:destination="@id/TransactionDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/TransactionDetailFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.TransactionDetailFragment"
+        android:label="Transaction Detail"
+        tools:layout="@layout/fragment_transaction_detail" />
+
+    <fragment
+        android:id="@+id/PayFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.PayFragment"
+        android:label="Pay"
+        tools:layout="@layout/fragment_pay" />
+
+    <fragment
+        android:id="@+id/TransferFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.TransferFragment"
+        android:label="Transfer"
+        tools:layout="@layout/fragment_transfer" />
+
+    <fragment
+        android:id="@+id/StatementsFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.StatementsFragment"
+        android:label="E-Statements"
+        tools:layout="@layout/fragment_statements">
+        <action
+            android:id="@+id/action_StatementsFragment_to_StatementViewFragment"
+            app:destination="@id/StatementViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StatementViewFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.StatementViewFragment"
+        android:label="Statement View"
+        tools:layout="@layout/fragment_statement_view">
+        <argument
+            android:name="month"
+            app:argType="string"
+            android:defaultValue="MAY 2024" />
+        <action
+            android:id="@+id/action_StatementViewFragment_to_TransactionDetailFragment"
+            app:destination="@id/TransactionDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddAccountFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.AddAccountFragment"
+        android:label="Add Account"
+        tools:layout="@layout/fragment_add_account" />
+
+    <fragment
+        android:id="@+id/AddGoalFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.AddGoalFragment"
+        android:label="Add Goal"
+        tools:layout="@layout/fragment_add_goal" />
+
+    <fragment
+        android:id="@+id/LimitsFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.LimitsFragment"
+        android:label="Limits &amp; Controls"
+        tools:layout="@layout/fragment_limits" />
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_ProfileFragment_to_EditProfileFragment"
+            app:destination="@id/EditProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditProfileFragment"
+        android:name="com.example.smartmoneyeverydaysa_1.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+</navigation>

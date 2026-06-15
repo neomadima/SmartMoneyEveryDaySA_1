@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/stmtRowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 May"
+        android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+        android:textColor="?android:attr/textColorSecondary" />
+
+    <TextView
+        android:id="@+id/stmtRowDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/stmtRowDate"
+        android:layout_marginStart="16dp"
+        android:text="Woolworths Food"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+    <TextView
+        android:id="@+id/stmtRowAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="- R 1,250.00"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Professional Banking Palette (Extracted from Logo) -->
+    <color name="primary">#1A73E8</color> <!-- Professional Deep Blue -->
+    <color name="primaryContainer">#E8F0FE</color>
+    <color name="secondary">#34A853</color> <!-- Vibrant Success Green -->
+    <color name="secondaryContainer">#E6F4EA</color>
+    <color name="tertiary">#FB8C00</color> <!-- Trustworthy Orange -->
+    <color name="tertiaryContainer">#FFF3E0</color>
+
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="expense_red">#D93025</color>
+    <color name="income_green">#1E8E3E</color>
+</resources>
